@@ -1,0 +1,190 @@
+@import url('https://fonts.googleapis.com/css2?family=Krona+One&family=Montserrat:wght@400;600&display=swap');
+
+:root {
+    --cor-de-fundo: #222831;
+    --cor-do-texto: #EEEEEE;
+    --cor-primaria: #B55400;
+    --cor-secundaria: #EEEEEE;
+    --cor-hover: #393E46;
+
+    --fonte-principal: 'Krona One', sans-serif;
+    --fonte-secundaria: 'Montserrat', sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    /* height: 100vh; */
+    box-sizing: border-box;
+    background-color: var(--cor-de-fundo);
+    color: var(--cor-do-texto);
+}
+
+.Cabeçalho {
+    padding: 2% 0% 0% 15%;
+}
+
+.Cabeçalho__Menu {
+    display: flex;
+    gap: 80px;
+}
+
+.Cabeçalho__Menu__Link {
+    font-family: var(--fonte-secundaria);
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: var(--cor-primaria);
+    text-decoration: none;
+}
+
+.Apresentaçao {
+    padding: 5% 15%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 82px;
+    }
+
+    .Apresentaçao__Conteudo {
+        width: 50%;
+        display: flex;
+        flex-direction: column;
+        gap: 40px;
+    }
+
+    .Apresentaçao__Conteudo__Titulo {
+        font-size: 2rem;
+        font-family: var(--fonte-principal);
+    }
+
+    .Titulo-Destaque {
+        color: var(--cor-secundaria);
+    }
+    
+    h1{
+        font-weight: bold;
+    }
+    
+    b {
+        color: var(--cor-secundaria);
+    }
+    
+
+    .Apresentaçao__Conteudo__Texto {
+        font-size: 1.125rem;
+        font-family: var(--fonte-secundaria);
+    }
+    
+    .Apresentaçao__Links {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 30px;
+    }
+
+    .Apresentaçao__Links__Subtitulo {
+        font-family: var(--fonte-principal);
+        font-weight: 400;
+        font-size: 1,1875rem;
+    }
+    
+    .Apresentaçao__Instagram {
+        /* background-color: var(--cor-secundaria); */
+        /* display: flex;
+        justify-content: center; */
+        gap: 16px;
+        border: 2px groove var(--cor-primaria) ;
+        transition: 1s; 
+        cursor: pointer;
+        width: 50%;
+        text-align: center;
+        border-radius: 8px;
+        font-size: 1.5rem;
+        font-weight: 600;
+        padding: 21.5px 0;
+        text-decoration: 0;
+        color: var(--cor-do-texto);
+        font-family: var(--fonte-secundaria);
+        
+    }
+
+    .Apresentaçao__Instagram:hover {
+        border: 2px groove var(--cor-primaria);
+        background-color: var(--cor-hover);
+        color: var(--cor-do-texto);
+        transition: 0s;
+        padding: 4%;
+    }
+
+    .Img__Instagram {
+        width: 20px;
+    }
+
+    .apresentaçao__Imagem {
+        width: 50%;
+    }
+
+    .Rodape {
+        padding: 19px;
+        color: var(--cor-do-texto);
+        background-color: var(--cor-primaria);
+        text-align: center;
+        font-family: var(--fonte-secundaria);
+        font-size: 0.9375rem;
+        font-weight: 400;
+    }
+
+    .Apresentaçao__Conteudo__Lista {
+        font-size: 0.9375rem;
+        font-weight: 400;
+        font-family: var(--fonte-secundaria);
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        gap: 30%;
+    }
+
+    .DP {
+        color: var(--cor-secundaria);
+    }
+
+    .form {
+        flex-direction: column;
+        font-family: var(--fonte-secundaria);
+    }
+
+    .Cursos {
+        flex-direction: column;
+        font-family: var(--fonte-secundaria);
+    }
+
+    .Apresentaçao__Conteudo__II {
+        width: 540px;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    @media (max-width: 820px) {
+        .Cabeçalho {
+            padding: 10%;
+        }
+
+        .Cabeçalho__Menu {
+            justify-content: center;
+        }
+        
+        .Apresentaçao {
+            flex-direction: column-reverse;
+            padding: 5%;
+        }
+
+         .Apresentaçao__Conteudo {
+            width: auto;
+         }
+        
+    }
